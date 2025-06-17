@@ -1,62 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashika's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top">
-        <h1>ASHIKA BABYDASAN</h1>
-        <hr>
-        <h2>WEB DEVELOPER</h2>
-        <hr>
+
+  <header class="topbar">
+    <div class="brand" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Ashika Babydasan</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a> 
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="cover_letter.pdf" target="_blank">Cover Letter</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main-section" id="mainSection">
+    <div class="photo-and-icons" id="photoSection">
+      <div class="photo-card">
+        <img src="Ashika_Passport_Size.jpg" class="profile-img" alt="Profile Photo" />
+      </div>
+      <div class="icon-links">
+        <a href="mailto:ashikababydasan@gmail.com" title="Email"><ion-icon name="mail-outline"></ion-icon></a>
+        <a href="https://github.com/ashikaaaaa" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
     </div>
-    <div class="container">
-        <div class="left">
-            <h3>CONTACT</h3>
-            <ion-icon name="mail-outline"></ion-icon> <a href="mailto:ashikababydasan@gmail.com">ashikababydasan@gmail.com</a>
+
+    <div class="intro-text" id="introText">
+        <div id="textContent">
+            <h3>Hello, I am</h3>
+            <h1 class="typing">Ashika Babydasan</h1>
+            <h2>Software Developer</h2>
             <br>
-            <ion-icon name="logo-github"></ion-icon> <a href="https://github.com/ashikaaaaa">ashikaaaa</a><br>
-            <ion-icon name="logo-linkedin"></ion-icon> <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/">Ashika Babydasan</a><br>
-            
-            <h3>SKILLS</h3>
-            <p class="skills"> C++, C, JAVA, SQL, HTML5 (With CSS and JavaScript), Angular JS, <br>Python, DSA</p>
-
-            <h3>EDUCATION</h3>
-            <p class="education"> <b>Bachelors in Computer Engineering </b></p>
-            <p> SVKM’s NMIMS <br>School of Technology Management and Engineering, <br>Navi Mumbai </p>
-            <p class="education"> <b>Schooling</b></p>
-            <p> Jaipuriar School  <br>St. Joseph's High School</p>
-        </div>
-        <div class="line"></div>
-        <div class="right">
-            <h3>ABOUT</h3>
             <p>
-                I am a dedicated and adaptable Computer Engineering student at SVKM's NMIMS School of 
-                Technology Management and Engineering, Navi Mumbai, with a strong foundation in programming 
-                languages and web technologies. My experience includes tutoring, participating in hackathons, 
-                and working on diverse projects. <br>I am proficient in various software tools and am committed to continuous 
-                learning and innovation, seeking opportunities to contribute to impactful projects and collaborate with 
-                diverse teams. I thrive in dynamic and innovative environments and am seeking opportunities at forward-thinking 
-                tech companies where I can contribute to impactful projects, collaborate with diverse teams, and continue 
-                my professional growth.
+              I’m a computer engineering student with a passion for modern web development, clean design, and meaningful projects. I enjoy building useful and beautiful digital experiences, and I'm always eager to collaborate and learn.
             </p>
+        </div>
+        <div class="tags" id="tagSection">
+            <div class="tag" data-tag="work">Work</div>
+            <div class="tag" data-tag="projects">Projects</div>
+            <div class="tag" data-tag="education">Education</div>
+            <div class="tag" data-tag="skills">Skills</div>
+        </div>
+    </div>
+  </div>
 
-            <h3>WORK EXPERIENCE</h3>
-            <p><b>TUTOR</b></p>
-            <p>Premdan Social Service Center | May 2023-October 2023</p>
-            <p>I volunteered as a tutor in Premdan Social Service Center</p>
+  <!-- Extra Content Sections -->
+  <div id="extraContent">
+    <!-- Work Section -->
+    <div class="content-section" id="work">
+        <button onclick="goBack()" class="back-btn">← Back</button>
+        <h2>Work Experience</h2>
+        <p>I have worked as a web development intern and contributed to real-world projects through AICTE internship opportunities.</p>
+
+        <div class="experience">
+            <h3>Microsoft Azure Intern, Edunet – Remote <span class="date">May 2025 – Jun 2025</span></h3>
             <ul>
-                <li>Teaching students of 10th grade</li>
-                <li>Improved Mentorship an Team Management Skills</li>
-                <li>Learning about importance of communication and expression</li>
+            <li>Gained hands-on experience with Microsoft Azure services and explored AI-powered tools</li>
+            <li>Built a crop recommendation system using Random Forest and environmental data</li>
             </ul>
         </div>
+
+        <div class="experience">
+            <h3>AI ML Intern, Edunet – Remote <span class="date">Apr 2025 – May 2025</span></h3>
+            <ul>
+            <li>Designed a CNN for fire detection from satellite images using TensorFlow/Keras</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Python Programming Intern, VaultofCodes – Remote <span class="date">Mar 2025 – Apr 2025</span></h3>
+            <ul>
+            <li>Created GUI apps in Tkinter, applied OOP and Python automation</li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="content-section" id="projects">
+        <button onclick="goBack()" class="back-btn">← Back</button>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+            <strong><a href="https://github.com/ashikaaaaa/Crop-Recommendation-System" target="_blank">Crop Recommendation System</a></strong><br>
+            ML model recommends crops based on soil and weather using Flask.
+            </li>
+            <li>
+            <strong><a href="https://github.com/ashikaaaaa/Chatbot-using-Streamlit-and-Gemini-API" target="_blank">AI Chatbot</a></strong><br>
+            Real-time chatbot using Gemini API and Streamlit.
+            </li>
+            <li>
+            <strong><a href="https://github.com/ashikaaaaa/Forest-Fire-Detection" target="_blank">Forest Fire Detection</a></strong><br>
+            CNN-based model for satellite image analysis and fire prediction.
+            </li>
+            <li><strong>Railway Reservation System (C++)</strong><br>Console app for ticket booking and admin operations.</li>
+            <li><strong>Gamified To-Do List (Android)</strong><br>Productivity app with streak tracking using Room DB.</li>
+        </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="content-section" id="education">
+        <button onclick="goBack()" class="back-btn">← Back</button>
+        <h2>Education</h2>
+
+        <div class="education-entry">
+            <h3>SVKM’s NMIMS, B.Tech in Computer Engineering <span class="date">Aug 2022 – May 2026</span></h3>
+            <ul>
+            <li>GPA: 3.03 / 4.0</li>
+            <li>Key Courses: DSA, OS, DBMS, CN, AI, Cyber Security</li>
+            </ul>
+        </div>
+
+        <div class="education-entry">
+            <h3>Jaipuriar School, Sanpada (CBSE, 12th Grade) <span class="date">2020 – 2022</span></h3>
+            <ul>
+            <li>GPA: 79.4%</li>
+            <li>Subjects: Python, SQL, Physics, Math</li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="content-section" id="skills">
+        <button onclick="goBack()" class="back-btn">← Back</button>
+        <h2>Skills</h2>
+
+        <h3>Technologies</h3>
+        <ul>
+            <li><strong>Languages:</strong> HTML, CSS, JS, Python, Java, C++, SQL</li>
+            <li><strong>Frameworks:</strong> Flask, Bootstrap</li>
+            <li><strong>Tools:</strong> VS Code, Git, Anaconda, SQL Server, Streamlit</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+            <li>TryHackMe – <em>Advent of Cyber</em></li>
+            <li>freeCodeCamp – <em>Front End Libraries</em></li>
+            <li>HackerRank – <em>Java (Basic & Intermediate)</em></li>
+        </ul>
+
+        <h3>Hackathons</h3>
+        <ul>
+            <li><strong>Echelon:</strong> Built web tools for social impact</li>
+            <li><strong>HACKX:</strong> Developed prototypes under pressure</li>
+            <li><strong>Flipkart Runway:</strong> Designed real-world e-commerce ideas</li>
+        </ul>
     </div>
+
+    <!-- New Contact Section -->
+    <div class="content-section" id="contact">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2>Contact Me</h2>
+      <p>You can reach me at <a href="mailto:ashikababydasan@gmail.com">ashikababydasan@gmail.com</a></p>
+      <p>Connect on <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/" target="_blank">LinkedIn</a> or visit my <a href="https://github.com/ashikaaaaa" target="_blank">GitHub</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tags = document.querySelectorAll('.tag');
+      const mainSection = document.getElementById('mainSection');
+      const sections = document.querySelectorAll('.content-section');
+
+      // Tag button click handler
+      tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+          const type = tag.dataset.tag;
+
+          // Hide intro section
+          mainSection.style.display = 'none';
+
+          // Hide all content sections
+          sections.forEach(sec => sec.classList.remove('active'));
+
+          // Show selected section
+          const selectedSection = document.getElementById(type);
+          if (selectedSection) {
+            selectedSection.classList.add('active');
+            selectedSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Contact navbar link click handler
+      document.querySelector('.navbar a[href="#contact"]').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        mainSection.style.display = 'none';
+        sections.forEach(sec => sec.classList.remove('active'));
+
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.classList.add('active');
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+
+      // Fade-in animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => observer.observe(section));
+    });
+
+    // Go back to main intro section
+    function goBack() {
+      const mainSection = document.getElementById('mainSection');
+      const sections = document.querySelectorAll('.content-section');
+
+      mainSection.style.display = 'flex';
+      sections.forEach(sec => sec.classList.remove('active'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>
