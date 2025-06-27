@@ -3,209 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashika's Portfolio</title>
+  <title>Ashika Babydasan | Portfolio</title>
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Bootstrap & CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="brand" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Ashika Babydasan</div>
-    <nav class="navbar">
-      <a href="index.html">Home</a> 
+  <!-- Header -->
+  <header class="topbar d-flex justify-content-between align-items-center px-4 py-2">
+    <div class="brand" data-text="Ashika Babydasan">Ashika Babydasan</div>
+    <nav class="navbar d-flex gap-3">
+      <a href="index.html">Home</a>
       <a href="resume.pdf" target="_blank">Resume</a>
       <a href="cover_letter.pdf" target="_blank">Cover Letter</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <div class="main-section" id="mainSection">
-    <div class="photo-and-icons" id="photoSection">
-      <div class="photo-card">
-        <img src="Ashika_Passport_Size.jpg" class="profile-img" alt="Profile Photo" />
+  <!-- Main Intro Section -->
+  <section class="main-section" id="mainSection">
+    <div class="intro-container">
+      <div class="photo-and-icons">
+        <img src="Ashika_Passport_Size.jpg" class="profile-img" alt="Ashika Babydasan" />
+        <div class="icon-links mt-3">
+          <a href="mailto:ashikababydasan@gmail.com" title="Email"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="https://github.com/ashikaaaaa" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
       </div>
-      <div class="icon-links">
-        <a href="mailto:ashikababydasan@gmail.com" title="Email"><ion-icon name="mail-outline"></ion-icon></a>
-        <a href="https://github.com/ashikaaaaa" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+      <div class="intro-text">
+        <h3>Hello, I am</h3>
+        <h1 class="typing">Ashika Babydasan</h1>
+        <h2>Software Developer</h2>
+        <p class="mt-3">
+          I’m a dedicated Computer Engineering student at SVKM's NMIMS, Navi Mumbai, with a strong foundation in programming and web technologies. I’ve tutored, participated in hackathons, and worked on diverse projects. I'm passionate about continuous learning, innovation, and collaborating with dynamic teams to build impactful solutions.
+        </p>
+
+        <!-- Tag Buttons -->
+        <div class="tags mt-4">
+          <button class="tag" data-tag="work">Work</button>
+          <button class="tag" data-tag="projects">Projects</button>
+          <button class="tag" data-tag="education">Education</button>
+          <button class="tag" data-tag="skills">Skills</button>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="intro-text" id="introText">
-        <div id="textContent">
-            <h3>Hello, I am</h3>
-            <h1 class="typing">Ashika Babydasan</h1>
-            <h2>Software Developer</h2>
-            <br>
-            <p>
-              I’m a computer engineering student with a passion for modern web development, clean design, and meaningful projects. I enjoy building useful and beautiful digital experiences, and I'm always eager to collaborate and learn.
-            </p>
-        </div>
-        <div class="tags" id="tagSection">
-            <div class="tag" data-tag="work">Work</div>
-            <div class="tag" data-tag="projects">Projects</div>
-            <div class="tag" data-tag="education">Education</div>
-            <div class="tag" data-tag="skills">Skills</div>
-        </div>
-    </div>
-  </div>
 
-  <!-- Extra Content Sections -->
-  <div id="extraContent">
-    <!-- Work Section -->
-    <div class="content-section" id="work">
-        <button onclick="goBack()" class="back-btn">← Back</button>
-        <h2>Work Experience</h2>
-        <p>I have worked as a web development intern and contributed to real-world projects through AICTE internship opportunities.</p>
+  <!-- Content Sections -->
+  <main id="extraContent">
+    <!-- Template for each section -->
+    <section id="work" class="content-section">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2>Work Experience</h2>
 
-        <div class="experience">
-            <h3>Microsoft Azure Intern, Edunet – Remote <span class="date">May 2025 – Jun 2025</span></h3>
-            <ul>
-            <li>Gained hands-on experience with Microsoft Azure services and explored AI-powered tools</li>
-            <li>Built a crop recommendation system using Random Forest and environmental data</li>
-            </ul>
-        </div>
-
-        <div class="experience">
-            <h3>AI ML Intern, Edunet – Remote <span class="date">Apr 2025 – May 2025</span></h3>
-            <ul>
-            <li>Designed a CNN for fire detection from satellite images using TensorFlow/Keras</li>
-            </ul>
-        </div>
-
-        <div class="experience">
-            <h3>Python Programming Intern, VaultofCodes – Remote <span class="date">Mar 2025 – Apr 2025</span></h3>
-            <ul>
-            <li>Created GUI apps in Tkinter, applied OOP and Python automation</li>
-            </ul>
-        </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="content-section" id="projects">
-        <button onclick="goBack()" class="back-btn">← Back</button>
-        <h2>Projects</h2>
+      <div class="experience">
+        <h3>Microsoft Azure Intern, Edunet – Remote <span class="date">May 2025 – Jun 2025</span></h3>
         <ul>
-            <li>
-            <strong><a href="https://github.com/ashikaaaaa/Crop-Recommendation-System" target="_blank">Crop Recommendation System</a></strong><br>
-            ML model recommends crops based on soil and weather using Flask.
-            </li>
-            <li>
-            <strong><a href="https://github.com/ashikaaaaa/Chatbot-using-Streamlit-and-Gemini-API" target="_blank">AI Chatbot</a></strong><br>
-            Real-time chatbot using Gemini API and Streamlit.
-            </li>
-            <li>
-            <strong><a href="https://github.com/ashikaaaaa/Forest-Fire-Detection" target="_blank">Forest Fire Detection</a></strong><br>
-            CNN-based model for satellite image analysis and fire prediction.
-            </li>
-            <li><strong>Railway Reservation System (C++)</strong><br>Console app for ticket booking and admin operations.</li>
-            <li><strong>Gamified To-Do List (Android)</strong><br>Productivity app with streak tracking using Room DB.</li>
+          <li>Explored Azure services and AI tools</li>
+          <li>Built crop recommendation system using Random Forest</li>
         </ul>
-        </div>
+      </div>
 
-        <!-- Education Section -->
-        <div class="content-section" id="education">
-        <button onclick="goBack()" class="back-btn">← Back</button>
-        <h2>Education</h2>
-
-        <div class="education-entry">
-            <h3>SVKM’s NMIMS, B.Tech in Computer Engineering <span class="date">Aug 2022 – May 2026</span></h3>
-            <ul>
-            <li>GPA: 3.03 / 4.0</li>
-            <li>Key Courses: DSA, OS, DBMS, CN, AI, Cyber Security</li>
-            </ul>
-        </div>
-
-        <div class="education-entry">
-            <h3>Jaipuriar School, Sanpada (CBSE, 12th Grade) <span class="date">2020 – 2022</span></h3>
-            <ul>
-            <li>GPA: 79.4%</li>
-            <li>Subjects: Python, SQL, Physics, Math</li>
-            </ul>
-        </div>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="content-section" id="skills">
-        <button onclick="goBack()" class="back-btn">← Back</button>
-        <h2>Skills</h2>
-
-        <h3>Technologies</h3>
+      <div class="experience">
+        <h3>AI ML Intern, Edunet – Remote <span class="date">Apr 2025 – May 2025</span></h3>
         <ul>
-            <li><strong>Languages:</strong> HTML, CSS, JS, Python, Java, C++, SQL</li>
-            <li><strong>Frameworks:</strong> Flask, Bootstrap</li>
-            <li><strong>Tools:</strong> VS Code, Git, Anaconda, SQL Server, Streamlit</li>
+          <li>Developed CNN for satellite-based fire detection using TensorFlow/Keras</li>
         </ul>
+      </div>
 
-        <h3>Certifications</h3>
+      <div class="experience">
+        <h3>Python Intern, VaultofCodes – Remote <span class="date">Mar 2025 – Apr 2025</span></h3>
         <ul>
-            <li>TryHackMe – <em>Advent of Cyber</em></li>
-            <li>freeCodeCamp – <em>Front End Libraries</em></li>
-            <li>HackerRank – <em>Java (Basic & Intermediate)</em></li>
+          <li>Built GUI apps with Tkinter and implemented automation</li>
         </ul>
+      </div>
+    </section>
 
-        <h3>Hackathons</h3>
+    <section id="projects" class="content-section">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong><a href="https://github.com/ashikaaaaa/Crop-Recommendation-System" target="_blank">Crop Recommendation System</a></strong> – ML + Flask app using soil & weather data</li>
+        <li><strong><a href="https://github.com/ashikaaaaa/Chatbot-using-Streamlit-and-Gemini-API" target="_blank">AI Chatbot</a></strong> – Streamlit + Gemini API based real-time bot</li>
+        <li><strong><a href="https://github.com/ashikaaaaa/Forest-Fire-Detection" target="_blank">Forest Fire Detection</a></strong> – CNN-based image classification model</li>
+        <li><strong>Railway Reservation System</strong> – C++ console app with admin functions</li>
+        <li><strong>Gamified To-Do List</strong> – Android app with streaks and Room DB</li>
+      </ul>
+    </section>
+
+    <section id="education" class="content-section">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2>Education</h2>
+      <div class="education-entry">
+        <h3>SVKM’s NMIMS – B.Tech in Computer Engineering <span class="date">Aug 2022 – May 2026</span></h3>
         <ul>
-            <li><strong>Echelon:</strong> Built web tools for social impact</li>
-            <li><strong>HACKX:</strong> Developed prototypes under pressure</li>
-            <li><strong>Flipkart Runway:</strong> Designed real-world e-commerce ideas</li>
+          <li>GPA: 3.03 / 4.0</li>
+          <li>Courses: DSA, OS, DBMS, CN, AI, Cyber Security</li>
         </ul>
-    </div>
+      </div>
+      <div class="education-entry">
+        <h3>Jaipuriar School, Sanpada – CBSE <span class="date">2020 – 2022</span></h3>
+        <ul>
+          <li>Score: 79.4%</li>
+          <li>Subjects: Python, SQL, Physics, Math</li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- New Contact Section -->
-    <div class="content-section" id="contact">
+    <section id="skills" class="content-section">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2>Skills</h2>
+      <h3>Technologies</h3>
+      <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JS, Python, Java, C++, SQL</li>
+        <li><strong>Frameworks:</strong> Flask, Bootstrap</li>
+        <li><strong>Tools:</strong> VS Code, Git, Anaconda, Streamlit, SQL Server</li>
+      </ul>
+
+      <h3>Certifications</h3>
+      <ul>
+        <li>TryHackMe – Advent of Cyber</li>
+        <li>freeCodeCamp – Front End Libraries</li>
+        <li>HackerRank – Java (Basic & Intermediate)</li>
+      </ul>
+
+      <h3>Hackathons</h3>
+      <ul>
+        <li><strong>Echelon:</strong> Built web tools for social impact</li>
+        <li><strong>HACKX:</strong> Built prototypes under time constraints</li>
+        <li><strong>Flipkart Runway:</strong> Designed e-commerce solutions</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section">
       <button onclick="goBack()" class="back-btn">← Back</button>
       <h2>Contact Me</h2>
-      <p>You can reach me at <a href="mailto:ashikababydasan@gmail.com">ashikababydasan@gmail.com</a></p>
-      <p>Connect on <a href="https://www.linkedin.com/in/ashika-babydasan-685b39290/" target="_blank">LinkedIn</a> or visit my <a href="https://github.com/ashikaaaaa" target="_blank">GitHub</a>.</p>
-    </div>
-  </div>
+      <p>Email: <a href="mailto:ashikababydasan@gmail.com">ashikababydasan@gmail.com</a></p>
+      <p><a href="https://linkedin.com/in/ashika-babydasan-685b39290/" target="_blank">LinkedIn</a> | <a href="https://github.com/ashikaaaaa" target="_blank">GitHub</a></p>
+    </section>
+  </main>
 
+  <!-- Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const tags = document.querySelectorAll('.tag');
-      const mainSection = document.getElementById('mainSection');
       const sections = document.querySelectorAll('.content-section');
+      const mainSection = document.getElementById('mainSection');
 
-      // Tag button click handler
       tags.forEach(tag => {
         tag.addEventListener('click', () => {
-          const type = tag.dataset.tag;
-
-          // Hide intro section
-          mainSection.style.display = 'none';
-
-          // Hide all content sections
-          sections.forEach(sec => sec.classList.remove('active'));
-
-          // Show selected section
-          const selectedSection = document.getElementById(type);
-          if (selectedSection) {
-            selectedSection.classList.add('active');
-            selectedSection.scrollIntoView({ behavior: 'smooth' });
-          }
+          const targetId = tag.dataset.tag;
+          showSection(targetId);
         });
       });
 
-      // Contact navbar link click handler
-      document.querySelector('.navbar a[href="#contact"]').addEventListener('click', (e) => {
+      document.querySelector('a[href="#contact"]').addEventListener('click', (e) => {
         e.preventDefault();
-
-        mainSection.style.display = 'none';
-        sections.forEach(sec => sec.classList.remove('active'));
-
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-          contactSection.classList.add('active');
-          contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        showSection('contact');
       });
 
-      // Fade-in animation
-      const observer = new IntersectionObserver((entries) => {
+      function showSection(id) {
+        mainSection.style.display = 'none';
+        sections.forEach(sec => sec.classList.remove('active'));
+        const section = document.getElementById(id);
+        section.classList.add('active');
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fade-in');
@@ -217,16 +192,31 @@
       sections.forEach(section => observer.observe(section));
     });
 
-    // Go back to main intro section
-    function goBack() {
-      const mainSection = document.getElementById('mainSection');
-      const sections = document.querySelectorAll('.content-section');
+    const sections = document.querySelectorAll('.content-section');
 
-      mainSection.style.display = 'flex';
-      sections.forEach(sec => sec.classList.remove('active'));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => observer.observe(section));
+
+    function goBack() {
+      document.getElementById('mainSection').style.display = 'flex';
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
