@@ -406,37 +406,76 @@ body {
     padding: 30px 20px;
   }
 
-  .intro-container {
+  /* Topbar responsive fix */
+  .topbar {
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    padding: 15px 20px;
   }
 
-  .photo-and-icons {
-    flex-shrink: 0;
+  .brand {
+    font-size: 1.6rem;
+    word-break: break-word;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  /* Typing animation fix */
+  .typing {
+    font-size: 1.6rem;
+    animation: typing 2.5s steps(15, end), blinkCaret 0.75s step-end infinite;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Image section + intro container */
+  .intro-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .profile-img {
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
   }
 
   .intro-text {
     padding: 20px;
     text-align: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  /* Icon links */
+  .icon-links {
+    margin-top: 15px;
+  }
+
+  .icon-links a {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  
+  .photo-and-icons {
+    flex-shrink: 0;
   }
 
   .navbar a {
     margin-left: 15px;
     font-size: 1rem;
-  }
-
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 20px;
-    height: auto;
   }
 
   .tags {
